@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+}
+.bodyContent{
+    max-width: 1900px;
+    height: 99vh;
+    border: solid #000;
+}
+
+.logoIndex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30px;
+    right: 790px;
+}
+
+.logoIndex img {
+    width: 5%; 
+    height: auto;
+}
+.logoIndex h2{
+    position: relative;
+    left: 5px;
+    font-family: "Poppins", sans-serif;
+    color: #133e87;
+}
+.userIcon {
+    font-size: 40px;
+    color: #133e87;
+    z-index: 1;
+    position: relative;
+    bottom: 18px;
+    float: right;
+    right: 100px;
+}
+.content{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 39%;
+    height: 40vh;
+    position: relative;
+    top: 150px;
+    left: 170px;
+    z-index: 1;
+    border: solid #000;
+}
+
+.content h1{
+    color: #133e87;
+    font-size: 50px;
+    font-weight: 2000;
+    font-family: "Poppins", sans-serif;
+}
+
+.content p{
+    position: relative;
+    top: 20px;
+    color: #133e87;
+    font-size: 24px;
+    line-height: 40px;
+    z-index: 1;
+    font-family: "Poppins", sans-serif;
+}
+
+.bodyImage{
+    position: relative;
+    bottom: 300px;
+    left: 900px;
+    max-width: 900px;
+}
+
+.bodyImage img{
+    width: 100%;
+    height: auto;
+}
