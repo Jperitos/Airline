@@ -36,6 +36,7 @@
     bottom: 18px;
     float: right;
     right: 100px;
+    cursor: pointer;
 }
 .indexContainer{
     height: 88vh;
