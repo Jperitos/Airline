@@ -4,7 +4,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    
     font-family: "Poppins", sans-serif;
 }
 .dashContainer{
@@ -22,11 +22,18 @@ h2{
     font-size: 35px;
     color: #133e87;
 }
-
+h3{
+    font-weight: 800;
+    color: #133e87;
+}
+label{
+    font-weight: 800;
+    color: #133e87;
+}
 .dashSidebar{
     display: flex;
     width: 5%;
-    height: 75vh;
+    height: 70vh;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -52,19 +59,135 @@ h2{
 
 .dashContent{
     display: flex;
+    flex-direction: column;
     position: relative;
-    right: 50px;
+    padding: 80px;
+    right: 20px;
+    top: 70px;
     max-width: 1400px;
+    border-radius: 40px;
     height: auto;
     background-color: #ecede9;
+    
 }
+
+.dashInput input{
+    border: none;
+    padding: 5px;
+    width: 300px;
+    margin-block: 10px;
+    background-color:#fcfcfc;
+    border-radius: 5px;
+}
+
+.formContent{
+    display: flex;
+    flex-direction: column;
+    width: 44%;
+}
+
 .dashDestination{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 30px;
 }
+
 .dashImage img{
-    width: 40%;
+    width: 30%;
+    position: absolute;
+    left: 900px;
+    top: 50px;
+    border: none;
+} 
+
+
+.dashInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 60%;
+}
+
+.flyingInput{
+    display: flex;
+    flex-direction: row;
+    margin-block: 30px;
+}
+
+.fromInput{
+    display: flex;
+    flex-direction: column;
 }
 
 
+.toInput{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 135px;
+}
+
+.dateInput{
+    display: flex;
+    flex-direction: row;
+}
+
+.departDate{
+    display: flex;
+    flex-direction: column;
+}
+.returnDate{
+    display: flex;
+    flex-direction: column;
+    margin-inline: 140px;
+}
+.flightContainer{
+    margin-block: 30px;
+}
+.dashPassenger{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dashClass{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    width: 76%;
+}
+.passInput{
+    display: flex;
+    flex-direction: column;    
+}
+
+.passInput input{
+  border: none;
+    padding: 5px;
+    width: 300px;
+    margin-block: 10px;
+    background-color:#fcfcfc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.flightBtn{
+    width: 100%;
+    margin-left: 700px;
+    margin-top: 30px;
+}
+.flightBtn button{
+    background-color: #133e87;
+    border-style: none;
+    color: #fff;
+    width: 200px;
+    padding: 5px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease; 
+}
+.flightBtn button:hover{
+    color: black;
+    background-color: #053ea1;
+    transform: scale(1.1); 
+}

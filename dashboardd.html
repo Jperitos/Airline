@@ -7,6 +7,7 @@
     <link rel="icon" href="image/Airline.png">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
 
     <h2>Plan Your Trip</h2>
@@ -14,36 +15,55 @@
 <div class="dashContainer">
     
     <div class="dashSidebar">
-     <i class='bx bxs-plane-alt'></i>
-     <i class='bx bxs-dashboard'></i>
-     <i class='bx bxs-user'></i>
-     <i class='bx bxs-food-menu'></i>
+        <a href="#planTrip"><i class='bx bxs-plane-alt'></i></a>
+        <a href="#dashboard"><i class='bx bxs-dashboard'></i></a>
+        <a href="#profile"><i class='bx bxs-user'></i></a>
+        <a href="#menu"><i class='bx bxs-food-menu'></i></a>
     </div>
 
-
+<section id="planTrip">
     <div class="dashContent">
 
         <div class="formContent">
+            <div class="destinationText">
             <h3>Destination</h3>
+            </div>
+
             <div class="dashDestination">
             <label><input type="radio" name="trip" checked> Round Trip</label>
-            <label><input type="radio" name="trip"> One Way</label>
+            <label><input type="radio" name="trip"> One Way</label>     
             </div>
         </div>
 
+        <div class="dashImage">
+            <img src="image/Airline (6).png" alt="Globe Image">
+        </div>    
+
         <div class="dashInput">
+            <div class="flyingInput">
+            <div class="fromInput">
             <label>Flying From</label>
             <input type="text" placeholder="Enter City">
+            </div>
+            <div class="toInput">
             <label>Flying To</label>
             <input type="text" placeholder="Enter City">
-
+            </div>
+             </div>
+            
+            <div class="dateInput">
+             <div class="departDate">
             <label>Departure Date</label>
             <input type="date" placeholder="Select Date">
+            </div>
+            <div class="returnDate">
             <label>Return Date</label>
             <input type="date" placeholder="Select Date">
-
+            </div>
+</div>
         </div>
 
+       <div class="flightContainer">
         <h3>Flight Class</h3>
         <div class="dashClass">
             <label><input type="radio" name="class" checked> Economy Class</label>
@@ -51,19 +71,45 @@
             <label><input type="radio" name="class"> First Class</label>
             <label><input type="radio" name="class"> Business Class</label>
         </div>
-
+</div>
         <div class="dashPassenger">
+            <div class="passInput">
             <label>No. of Passengers</label>
             <input type="number" placeholder="Enter number of passengers">
+            </div>
+
+            <div class="flightBtn">
+                <button class="find-flight-btn">Find Flight</button>
+                </div>
+
         </div>
 
-        <div class="dashImage">
-            <img src="image/Airline (6).png" alt="Globe Image">
-        </div>
-
-        <button class="find-flight-btn">Find Flight</button>
     </div>
+</section>
+
+<section id="dashboard" style="display: none;">
+    <div class="dashContent">
+        <h3>Dashboard</h3>
+        <p>This is the dashboard section. You can add dashboard statistics, recent trips, or other information here.</p>
+    </div>
+</section>
+
+<section id="profile" style="display: none;">
+    <div class="dashContent">
+        <h3>Profile</h3>
+        <p>This is the profile section. Display user details, profile picture, and account settings here.</p>
+    </div>
+</section>
+
+<section id="menu" style="display: none;">
+    <div class="dashContent">
+        <h3>Menu</h3>
+        <p>This is the menu section. You can add additional links or options related to trip planning here.</p>
+    </div>
+</section>
 
 </div>
+<script src="script.js"></script>
+
 </body>
 </html>
