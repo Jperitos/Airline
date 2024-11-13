@@ -35,15 +35,16 @@ label{
     width: 5%;
     height: 70vh;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    position: relative;
-    right: 100px;
-    top: 70px;
+    position: fixed;
+    left: 150px;
+    top: 130px;
     border-radius: 50px;
     background-color: #cbdceb;
     gap: 100px;
 }
+
 
 .dashSidebar i{
     font-size: 45px;
@@ -62,9 +63,8 @@ label{
     flex-direction: column;
     position: relative;
     padding: 80px;
-    right: 20px;
     top: 70px;
-    max-width: 1400px;
+    width: 110%;
     border-radius: 40px;
     height: auto;
     background-color: #ecede9;
@@ -97,7 +97,7 @@ label{
     width: 30%;
     position: absolute;
     left: 900px;
-    top: 50px;
+    top: 20px;
     border: none;
 } 
 
@@ -191,3 +191,110 @@ label{
     background-color: #053ea1;
     transform: scale(1.1); 
 }
+#dashboard {
+    display: flex;
+}
+
+#dashboard h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+color: #053ea1;
+}
+.flightType{
+    margin-top: 80px;
+}
+.dashContent1 {
+    flex: 1;
+    padding: 10px;
+    margin-top: 70px;
+    margin-left: 150px;
+    background-color: #ffffff;
+}
+
+
+.flightCard {
+    background-color: #f5f7fa;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    width: 1500px;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 30px;
+}
+
+.flightInfo1 {
+    display: flex;
+    flex-direction: column;
+    padding-block: 10px;
+    padding-inline: 30px;
+    font-size: 18px;
+    color: #123e86;
+}
+
+.flightInfo1 p{ 
+    color: #053ea1;
+}
+.classFlight{
+    padding-block: 30px;
+    color: #053ea1;
+}
+.classFlight p{
+    display: flex;
+    flex-direction: column;
+}
+
+.availSets{
+    padding-block: 30px;
+    color: #053ea1;
+}
+.availSets p{
+    display: flex;
+    flex-direction: column;
+}
+.terminalNo p{
+    display: flex;
+    flex-direction: column;
+}
+.promoDiscount{
+    padding-block: 30px;
+    color: #053ea1;
+}
+.promoDiscount p{
+   display: flex;
+   flex-direction: column;
+}
+.ticketPrice{
+    padding-block: 30px;
+    color: #053ea1;
+}
+.ticketPrice p{
+    display: flex;
+    flex-direction: column;
+}
+
+.price {
+    font-size: 24px;
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.time {
+    font-size: 24px;
+    color: #123e86;
+    font-weight: bold;
+}
+
+.highlight {
+    color: #123e86;
+    font-weight: bold;
+}
+
+.promo {
+    font-weight: bold;
+    color: #123e86;
+}
+
