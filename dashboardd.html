@@ -31,8 +31,8 @@
             </div>
 
             <div class="dashDestination">
-            <label><input type="radio" name="trip" checked> Round Trip</label>
-            <label><input type="radio" name="trip"> One Way</label>     
+                <label><input type="radio" name="trip" value="round" onclick="toggleReturnDate()" checked> Round Trip</label>
+                <label><input type="radio" name="trip" value="oneWay" onclick="toggleReturnDate()"> One Way</label>
             </div>
         </div>
 
@@ -52,22 +52,22 @@
             </div>
              </div>
             
-            <div class="dateInput">
-             <div class="departDate">
-            <label>Departure Date</label>
-            <input type="date" placeholder="Select Date">
-            </div>
-            <div class="returnDate">
-            <label>Return Date</label>
-            <input type="date" placeholder="Select Date">
-            </div>
+             <div class="dateInput">
+                <div class="departDate">
+                    <label>Departure Date</label>
+                    <input type="date" placeholder="Select Date">
+                </div>
+                <div class="returnDate" id="returnDate">
+                    <label>Return Date</label>
+                    <input type="date" placeholder="Select Date">
+                </div>
 </div>
         </div>
 
        <div class="flightContainer">
         <h3>Flight Class</h3>
         <div class="dashClass">
-            <label><input type="radio" name="class" checked> Economy Class</label>
+            <label><input type="radio" name="class"> Economy Class</label>
             <label><input type="radio" name="class"> Premium Class</label>
             <label><input type="radio" name="class"> First Class</label>
             <label><input type="radio" name="class"> Business Class</label>
@@ -80,21 +80,24 @@
             </div>
 
             <div class="flightBtn">
-                <button class="find-flight-btn">Find Flight</button>
-                </div>
+                <button class="find-flight-btn" onclick="showDashboard()">Find Flight</button>
+            </div>
 
         </div>
-
+            
     </div>
 </section>
 
 <section id="dashboard" style="display: none;">
-    <div class="flightType">
-    <h3>One Way Flight</h3>
-</div>
+   
     <div class="dashContent1">
-        
-        <div class="flightCard">
+
+        <!-- One way -->
+<div class="oneWayCards" style="display: none;">
+    <div class="flightType">
+        <h3>One Way Flight</h3>
+    </div>
+        <div class="flightCard" onclick="selectFlightCard()">
             <div class="flightInfo1">
                 <p>Departure</p>
                 <h4 class="time">7:30 AM</h4>
@@ -130,7 +133,7 @@
         </div>
 
         <!-- flight card -->
-        <div class="flightCard">
+        <div class="flightCard" onclick="selectFlightCard()">
             <div class="flightInfo1">
                 <p>Departure</p>
                 <h4 class="time">10:30 AM</h4>
@@ -162,13 +165,116 @@
                 </div>
             </div>
         </div>
+</div>
+
+        <!-- round Trip -->
+
+<div class="roundTripCards" style="display: none;">
+    <div class="flightType">
+        <h3>Round Trip Flight</h3>
+    </div>
+
+       <div class="flightCard1" onclick="selectFlightCard()">
+    <div class="flightInfo2">
+        <p>Departure</p>
+        <h4 class="time">7:30 AM</h4>
+    </div>
+    <div class="flightInfo2">
+        <p>Arrival</p>
+        <h4 class="time">8:30 AM</h4>
+    </div>
+    <div class="flightInfo2">
+        <p>Class</p>
+        <h4 class="highlight">Business</h4>
+    </div>
+    <div class="flightInfo2">
+        <p>Terminal no.</p>
+        <h4 class="highlight">#1</h4>
+    </div>
+    <div class="flightInfo2">
+        <p>Flight no.</p>
+        <h4 class="highlight">5J 560</h4>
+    </div>
+    <div class="flightInfo2">
+        <p>Return</p>
+        <h4 class="time">7:30 AM</h4>
+    </div>
+    <div class="flightInfo2">
+        <p>Arrival</p>
+        <h4 class="time">8:30 AM</h4>
+    </div>
+    <div class="flightInfo2">
+        <p>Seat Available</p>
+        <h4 class="highlight">15</h4>
+    </div>
+    <div class="flightInfo2">
+        <p>Promo</p>
+        <h4 class="promo">10%</h4>
+    </div>
+    <div class="flightInfo2">
+        <p>Price Ticket</p>
+        <h4 class="price"> <span>P1800</span></h4>
+    </div>
+</div>
+ </div>
+
     </div>
 </section>
 
 <section id="profile" style="display: none;">
     <div class="dashContent1">
         <h3>Passenger Information</h3>
-        
+
+
+         <div class="passengerDetails">
+        <h4>Passenger #<span>1</span></h4>
+         
+        <div class="passengerCard">
+            <div class="passengerName">
+            <label for="text">Passenger Name</label>
+             <input type="text" placeholder="Enter Name">
+            </div> 
+             <div class="birthDate">
+            <label for="text">Date of Birth</label>
+            <input type="date" placeholder="Enter Date">
+            </div>
+        </div>
+
+        <div class="passengerCard">
+            <div class="passengerAddress">
+                <label for="text">Address</label>
+                <input type="text" placeholder="Enter Address">
+            </div>
+        </div>
+
+        <div class="passengerCard">
+            <div class="contactNo">
+              <label for="text">Contact No.</label>
+              <input type="text" placeholder="Enter Number">
+            </div>
+
+              <div class="genderType">  
+                <label for="text">Gender</label>
+
+                <div class="gender">
+                <div class="genderChoice">
+                <input type= "radio" name="Gender">
+                <label>Male</label>
+                </div>
+
+                <div class="genderChoice">
+                <input type="radio" name="Gender">
+                <label>Female</label>
+                </div>
+                </div>
+              </div>
+
+        </div>
+    </div>
+    <div class="proceedButton">
+        <button onclick="goToMenu()">Proceed to Summary</button>
+    </div>
+    
     </div>
 </section>
 
