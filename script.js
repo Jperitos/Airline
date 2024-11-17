@@ -26,7 +26,7 @@ const links = document.querySelectorAll('.dashSidebar a');
         }
     }
 
-    // shoe dashboard
+    // show dashboard
     function showDashboard() {
         const dashboardSection = document.getElementById("dashboard");
         const planTripSection = document.getElementById("planTrip"); // Assuming "planTrip" is the ID of the section you want to hide.
